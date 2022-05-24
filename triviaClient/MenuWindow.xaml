@@ -1,0 +1,46 @@
+﻿<Window x:Class="triviaClient.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:triviaClient"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="450" Width="750">
+    <Window.Resources>
+        <ContextMenu x:Key="cmRoom" Width="150">
+            <MenuItem x:Name="createRoom_btn" Header="Create Room" Click="createRoom_btn_Click" Height="50" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center"/>
+            <MenuItem x:Name="joinRoom_btn"  Header="Join Room" Click="joinRoom_btn_Click" Height="50" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center"/>
+        </ContextMenu>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button x:Name="logout_btn" Grid.Column="4" Margin="90,10,10,0" Click="logout_btn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Screenshot_4.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="room_btn" Grid.ColumnSpan="2" Content="Play a Game" HorizontalAlignment="Left" Height="67" Margin="107,27,0,0" Grid.Row="5" Grid.RowSpan="2" VerticalAlignment="Top" Width="180" Click="room_btn_Click"/>
+        <Button x:Name="stats_btn" Grid.ColumnSpan="2" Content="Show Statistics" Grid.Column="3" HorizontalAlignment="Left" Height="67" Margin="0,27,0,0" Grid.Row="5" Grid.RowSpan="2" VerticalAlignment="Top" Width="180" Click="stats_btn_Click"/>
+        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="175" Margin="129,25,0,0" Grid.Row="1" Grid.RowSpan="4" VerticalAlignment="Top" Width="482" Source="images/Screenshot_5.png"></Image>
+
+
+    </Grid>
+</Window>

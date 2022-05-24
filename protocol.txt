@@ -1,0 +1,34 @@
+response messages:
+
+sign up response - 0000 0000
+login response - 0000 0001
+error response - 0000 0010
+logout response - 0000 0011
+get room response - 0000 0100
+get players in room response - 0000 0101
+join room response - 0000 0110
+create room response - 0000 0111
+get high score response - 0000 1000
+get personal stats response - 0000 1001
+close room response - 0000 1010
+start game response - 0000 1011
+get room state response - 0000 1100
+leave room response - 0000 1101
+
+----
+
+request messages:
+
+sign up request - 1000 0000
+login request - 1000 0001
+signout request - 1000 0011
+get room request - 1000 0100
+get players in room request - 1000 0101
+join room request - 1000 0110
+create room request - 1000 0111
+get high score request - 1000 1000
+get personal stats request - 1000 1001
+close room request - 1000 1010
+start game request - 1000 1011
+get room state request - 1000 1100
+leave room request - 1000 1101
